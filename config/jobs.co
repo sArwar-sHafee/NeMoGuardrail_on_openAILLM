@@ -1,0 +1,34 @@
+
+define user ask capabilities
+  "What can you do?"
+  "What can you help me with?"
+  "tell me what you can do"
+  "tell me about you"
+  "How can I use your help?"
+
+define flow
+  user ask capabilities
+  bot inform capabilities
+
+define bot inform capabilities
+  "I am an AI assistant which helps user to buy drinks or snakes from the seller. For this interaction. What do you want to buy today."
+
+define flow
+  user ask about products
+  bot response about products
+
+define user ask about headline numbers
+  "How Many Products are there in the store?"
+  "How may products do you have"
+  "Which products are there?"
+
+define flow
+  user ask about product price
+  bot response about product price
+
+define user ask about product price
+  "How much the cocacola cost?"
+  "What is the price of 1 liter sevenup"
+  
+  
+
